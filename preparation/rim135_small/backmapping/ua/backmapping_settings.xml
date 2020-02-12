@@ -1,0 +1,156 @@
+<settings>
+    <cg_molecule>
+        <name>EPO</name>
+        <ident>EPO</ident>
+        <source_coordinate>epon-828_ua.gro</source_coordinate>
+        <source_topology>epon-828_ua.itp</source_topology>
+        <!-- A1 beads -->
+        <cg_bead>
+            <name>A1</name>
+            <type>A</type>
+            <beads active_site="EPO:C1:2">
+                1:EPO:O1 1:EPO:C1 1:EPO:C2 1:EPO:C3 1:EPO:O2
+            </beads>
+        </cg_bead>
+        <!-- B1 bead -->
+        <cg_bead>
+            <name>B1</name>
+            <type>B</type>
+            <beads>
+                1:EPO:C61 1:EPO:C62 1:EPO:C63 1:EPO:C64 1:EPO:C65 1:EPO:C66
+                1:EPO:C4 1:EPO:C5 1:EPO:C6
+                1:EPO:C71 1:EPO:C72 1:EPO:C73 1:EPO:C74 1:EPO:C75 1:EPO:C76
+            </beads>
+        </cg_bead>
+
+        <!-- A2 bead -->
+        <cg_bead>
+            <name>A2</name>
+            <type>A</type>
+            <beads active_site="EPO:C9:2">
+                1:EPO:O3 1:EPO:C7 1:EPO:C8 1:EPO:C9 1:EPO:O4
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_molecule>
+        <name>HDD</name>
+        <ident>HDD</ident>
+        <source_coordinate>hdde_ua.gro</source_coordinate>
+        <source_topology>hdde_ua.itp</source_topology>
+        <!-- E1 bead -->
+        <cg_bead>
+            <name>E1</name>
+            <type>E</type>
+            <beads active_site="HDD:C1:2">
+                1:HDD:C1 1:HDD:O1 1:HDD:C2 1:HDD:O2 1:HDD:C3
+            </beads>
+        </cg_bead>
+        <!-- F1 bead -->
+        <cg_bead>
+            <name>F1</name>
+            <type>F</type>
+            <beads>
+                1:HDD:C4 1:HDD:C5 1:HDD:C6 1:HDD:C7 1:HDD:C8 1:HDD:C9
+            </beads>
+        </cg_bead>
+        <!-- E2 bead -->
+        <cg_bead>
+            <name>E2</name>
+            <type>E</type>
+            <beads active_site="HDD:C12:2">
+                1:HDD:C11 1:HDD:O4 1:HDD:C12 1:HDD:O3 1:HDD:C10
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_molecule>
+        <name>IPD</name>
+        <ident>IPD</ident>
+        <source_coordinate>ipd_ua.gro</source_coordinate>
+        <source_topology>ipd_ua.itp</source_topology>
+        <!-- monomer -->
+        <cg_bead>
+            <name>K1</name>
+            <type>K</type>
+            <beads active_site="IPD:N1:3 IPD:N2:3">
+                1:IPD:C1 1:IPD:C2 1:IPD:C3 1:IPD:C4 1:IPD:C5 1:IPD:C6 1:IPD:N1 1:IPD:C7 1:IPD:N2 1:IPD:C8 1:IPD:C9 1:IPD:C10
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_molecule>
+        <name>JEF</name>
+        <ident>JEF</ident>
+        <source_coordinate>jeff400_ua.gro</source_coordinate>
+        <source_topology>jeff400_ua.itp</source_topology>
+        <cg_bead>
+            <name>H1</name>
+            <type>H</type>
+            <beads active_site="JEF:N1:3">
+                1:JEF:N1 1:JEF:C1 1:JEF:C2 1:JEF:C3 1:JEF:O1 1:JEF:C4 1:JEF:C5 1:JEF:C6 1:JEF:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>I1</name>
+            <type>I</type>
+            <beads>
+                1:JEF:C7 1:JEF:C8 1:JEF:C9 1:JEF:O3 1:JEF:C10 1:JEF:C11 1:JEF:C12 1:JEF:O4 1:JEF:C13 1:JEF:C14 1:JEF:C15
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>Q2</name>
+            <type>Q</type>
+            <beads active_site="JEF:N2:3">
+                1:JEF:O5 1:JEF:C16 1:JEF:C17 1:JEF:C18 1:JEF:O6 1:JEF:C19 1:JEF:C20 1:JEF:C21 1:JEF:N2
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_configuration>
+        <format>GROMACS</format>
+            <file>cg_cl_conf.gro</file>
+        <topology>cg_cl_topol.top</topology>
+    </cg_configuration>
+
+    <hybrid_configuration>
+        <file>hyb_conf.gro</file>
+        <format>GROMACS</format>
+    </hybrid_configuration>
+
+    <hybrid_topology>
+        <file>hyb_topol.top</file>
+        <bonds params="1 0.146 6390.1; EPO_C1/C2-IPD_N1/N2">
+            EPO:C1 IPD:N1
+            EPO:C1 IPD:N2
+            EPO:C9 IPD:N1
+            EPO:C9 IPD:N2
+            EPO:C1 JEF:N1
+            EPO:C1 JEF:N2
+            EPO:C9 JEF:N1
+            EPO:C9 JEF:N2
+            HDD:C1 IPD:N1
+            HDD:C1 IPD:N2
+            HDD:C12 IPD:N1
+            HDD:C12 IPD:N2
+        </bonds>
+        <angles params="1 111.56 585.76 ; CROSS_BCK">
+            EPO:C1 IPD:N1 IPD:C1
+            EPO:C9 IPD:N2 IPD:C7
+            JEF:N2 EPO:C9 EPO:C8
+            IPD:N1 EPO:C1 EPO:C2
+            IPD:N2 EPO:C9 EPO:C8
+            JEF:N2 EPO:C9 EPO:C8
+        </angles>
+        <!-- add angles, dihedrals, pairs?? -->
+        <molecule_type>
+            <name>HYB</name>
+            <exclusion>3</exclusion>
+        </molecule_type>
+        <include>
+            ;"/apps/leuven/thinking/2014a/software/GROMACS/5.0.4-intel-2014a-hybrid/share/gromacs/top/oplsaa.ff/forcefield.itp"
+            "/usr/share/gromacs/top/oplsaa.ff/forcefield.itp"
+        </include>
+        <system>HYB</system>
+    </hybrid_topology>
+</settings>

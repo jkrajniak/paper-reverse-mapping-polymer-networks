@@ -1,0 +1,34 @@
+<cg_configuration>
+    <type2chain>
+        0:EPO:A
+        1:EPO:B
+        2:HDD:E
+        3:HDD:F
+        4:JEF:Q
+        5:JEF:I
+        6:IPD:K
+        <!--8:EPO:A
+        9:JEF:H
+        10:IPD:K
+        11:HDD:E-->
+    </type2chain>
+    <name_seq chain_name="EPO" seq="0 1 0" res_name="EPO">
+        A1 B1 A2
+    </name_seq>
+    <name_seq chain_name="JEF" seq="4 5 4" res_name="JEF">
+        Q1 I1 Q2
+    </name_seq>
+    <name_seq chain_name="IPD" seq="6" res_name="IPD">
+        K1
+    </name_seq>
+    <name_seq chain_name="HDD" seq="2 3 2" res_name="HDD">
+        E1 F1 E2
+    </name_seq>
+
+    <molecule_type name="EPO" nrexcl="3" nrmols="1" size="3"/>
+    <molecule_type name="JEF" nrexcl="3" nrmols="1" size="3"/>
+    <molecule_type name="IPD" nrexcl="3" nrmols="1" size="1"/>
+    <molecule_type name="HDD" nrexcl="3" nrmols="1" size="3"/>
+
+    <h5md atom_groups="atoms" connection_groups="bonds_0, chem_bonds_0, chem_bonds_1"/>
+</cg_configuration>

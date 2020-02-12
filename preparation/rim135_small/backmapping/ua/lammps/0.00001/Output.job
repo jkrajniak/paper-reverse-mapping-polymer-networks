@@ -1,0 +1,64 @@
+time: 43200
+nodes: 2
+procs: 40
+account string: lp_sim_interpoco
+queue: q24h
+========================================================================
+========================================================================
+Epilogue args:
+Date: Fri Mar 31 06:18:40 CEST 2017
+Allocated nodes:
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i0n5
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+r4i1n6
+Job ID: 20483498.hpc-p-svcs-10.icts.hpc.kuleuven.be
+User ID: vsc30783
+Group ID: vsc30783
+Job Name: bck_ua_0.00001
+Session ID: 18328
+Resource List: neednodes=2:ppn=20,nodes=2:ppn=20,pmem=2400mb,walltime=12:00:00
+Resources Used: cput=104:14:19,energy_used=0,mem=1317684kb,vmem=9046028kb,walltime=05:14:12
+Queue Name: q24h
+Account String: lp_sim_interpoco
+-------------------------------------------------------------------------
+time: 18852
+nodes: 2
+procs: 40
+account: lp_sim_interpoco

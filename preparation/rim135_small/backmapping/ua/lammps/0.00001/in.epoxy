@@ -1,0 +1,35 @@
+# Bulk EPOXY monomers
+
+# Sim settings
+
+units           real
+atom_style      full
+bond_style      harmonic
+angle_style     harmonic
+dihedral_style  nharmonic
+improper_style  cvff
+pair_style      lj/cut/coul/long 12.0 12.0
+special_bonds   lj/coul 0.0 0.0 0.5
+dielectric      1
+kspace_style    pppm 1.0e-4
+pair_modify     tail yes
+dimension       3
+timestep        1.0
+boundary        p p p
+read_data       data.0
+#read_restart    restart1.md
+velocity        all create 300 87287 loop geom
+neighbor        3.0 bin
+
+thermo          1000
+thermo_style    custom time etotal ebond eangle edihed eimp elong etail temp press density vol lx ly lz
+
+# Minimize first
+min_style cg
+minimize 1.0e-4 1.0e-6 1000 100
+
+restart 5000000 restart2.mpiio
+
+fix  3 all npt temp 300 300 100.0 aniso 1.0 1.0 1000.0
+run  10000000
+write_data data.eq.*

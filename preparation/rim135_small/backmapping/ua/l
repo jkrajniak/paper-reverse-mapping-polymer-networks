@@ -1,0 +1,176 @@
+mkdir: cannot create directory `gmx_9/0.000001/nvt/pull': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.000001/global_pull.sh'
+mkdir: cannot create directory `gmx_9/0.000001/nvt/pull/pull_x': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.000001/nvt/pull/pull_x/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.000001/nvt/pull/pull_x/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.000001/nvt/pull/pull_x/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.000001/nvt/pull/pull_x/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.000001/nvt/pull/pull_x/topol.top'
+1e-06
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: x
+Box: 5.11503
+Deformation steps 10000000 dt= 0.001
+Lz: 5.11503
+Vz: 0.0000511503000000
+mkdir: cannot create directory `gmx_9/0.000001/nvt/pull/pull_y': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.000001/nvt/pull/pull_y/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.000001/nvt/pull/pull_y/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.000001/nvt/pull/pull_y/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.000001/nvt/pull/pull_y/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.000001/nvt/pull/pull_y/topol.top'
+1e-06
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: y
+Box: 4.75609
+Deformation steps 10000000 dt= 0.001
+Lz: 4.75609
+Vz: 0.0000475609000000
+mkdir: cannot create directory `gmx_9/0.000001/nvt/pull/pull_z': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.000001/nvt/pull/pull_z/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.000001/nvt/pull/pull_z/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.000001/nvt/pull/pull_z/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.000001/nvt/pull/pull_z/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.000001/nvt/pull/pull_z/topol.top'
+1e-06
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: z
+Box: 4.94113
+Deformation steps 10000000 dt= 0.001
+Lz: 4.94113
+Vz: 0.0000494113000000
+mkdir: cannot create directory `gmx_9/0.00001/nvt/pull': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.00001/global_pull.sh'
+mkdir: cannot create directory `gmx_9/0.00001/nvt/pull/pull_x': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.00001/nvt/pull/pull_x/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.00001/nvt/pull/pull_x/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.00001/nvt/pull/pull_x/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.00001/nvt/pull/pull_x/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.00001/nvt/pull/pull_x/topol.top'
+1e-05
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: x
+Box: 4.87640
+Deformation steps 10000000 dt= 0.001
+Lz: 4.87640
+Vz: 0.0000487640000000
+mkdir: cannot create directory `gmx_9/0.00001/nvt/pull/pull_y': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.00001/nvt/pull/pull_y/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.00001/nvt/pull/pull_y/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.00001/nvt/pull/pull_y/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.00001/nvt/pull/pull_y/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.00001/nvt/pull/pull_y/topol.top'
+1e-05
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: y
+Box: 4.95049
+Deformation steps 10000000 dt= 0.001
+Lz: 4.95049
+Vz: 0.0000495049000000
+mkdir: cannot create directory `gmx_9/0.00001/nvt/pull/pull_z': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.00001/nvt/pull/pull_z/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.00001/nvt/pull/pull_z/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.00001/nvt/pull/pull_z/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.00001/nvt/pull/pull_z/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.00001/nvt/pull/pull_z/topol.top'
+1e-05
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: z
+Box: 5.01263
+Deformation steps 10000000 dt= 0.001
+Lz: 5.01263
+Vz: 0.0000501263000000
+mkdir: cannot create directory `gmx_9/0.0001/nvt/pull': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.0001/global_pull.sh'
+mkdir: cannot create directory `gmx_9/0.0001/nvt/pull/pull_x': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.0001/nvt/pull/pull_x/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.0001/nvt/pull/pull_x/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.0001/nvt/pull/pull_x/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.0001/nvt/pull/pull_x/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.0001/nvt/pull/pull_x/topol.top'
+0.0001
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: x
+Box: 4.75983
+Deformation steps 10000000 dt= 0.001
+Lz: 4.75983
+Vz: 0.0000475983000000
+mkdir: cannot create directory `gmx_9/0.0001/nvt/pull/pull_y': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.0001/nvt/pull/pull_y/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.0001/nvt/pull/pull_y/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.0001/nvt/pull/pull_y/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.0001/nvt/pull/pull_y/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.0001/nvt/pull/pull_y/topol.top'
+0.0001
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: y
+Box: 5.04217
+Deformation steps 10000000 dt= 0.001
+Lz: 5.04217
+Vz: 0.0000504217000000
+mkdir: cannot create directory `gmx_9/0.0001/nvt/pull/pull_z': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.0001/nvt/pull/pull_z/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.0001/nvt/pull/pull_z/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.0001/nvt/pull/pull_z/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.0001/nvt/pull/pull_z/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.0001/nvt/pull/pull_z/topol.top'
+0.0001
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: z
+Box: 5.08820
+Deformation steps 10000000 dt= 0.001
+Lz: 5.08820
+Vz: 0.0000508820000000
+mkdir: cannot create directory `gmx_9/0.001/nvt/pull': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.001/global_pull.sh'
+mkdir: cannot create directory `gmx_9/0.001/nvt/pull/pull_x': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.001/nvt/pull/pull_x/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.001/nvt/pull/pull_x/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.001/nvt/pull/pull_x/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.001/nvt/pull/pull_x/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.001/nvt/pull/pull_x/topol.top'
+0.001
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: x
+Box: 4.91540
+Deformation steps 10000000 dt= 0.001
+Lz: 4.91540
+Vz: 0.0000491540000000
+mkdir: cannot create directory `gmx_9/0.001/nvt/pull/pull_y': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.001/nvt/pull/pull_y/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.001/nvt/pull/pull_y/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.001/nvt/pull/pull_y/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.001/nvt/pull/pull_y/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.001/nvt/pull/pull_y/topol.top'
+0.001
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: y
+Box: 5.05238
+Deformation steps 10000000 dt= 0.001
+Lz: 5.05238
+Vz: 0.0000505238000000
+mkdir: cannot create directory `gmx_9/0.001/nvt/pull/pull_z': File exists
+`template_pull/global_pull.sh' -> `gmx_9/0.001/nvt/pull/pull_z/global_pull.sh'
+`template_pull/grompp_deform.tpl' -> `gmx_9/0.001/nvt/pull/pull_z/grompp_deform.tpl'
+`template_pull/make_deform.sh' -> `gmx_9/0.001/nvt/pull/pull_z/make_deform.sh'
+`template_pull/MyJobScript.sh' -> `gmx_9/0.001/nvt/pull/pull_z/MyJobScript.sh'
+`template_pull/topol.top' -> `gmx_9/0.001/nvt/pull/pull_z/topol.top'
+0.001
+`../../confout.gro' -> `conf.gro'
+./make_deform.sh STRAIN TEMPLATE_FILE DIRECTION
+Direction: z
+Box: 4.87192
+Deformation steps 10000000 dt= 0.001
+Lz: 4.87192
+Vz: 0.0000487192000000

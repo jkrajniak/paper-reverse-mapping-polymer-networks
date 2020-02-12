@@ -1,0 +1,403 @@
+<settings>
+    <cg_molecule>
+        <name>EPO</name>
+        <ident>EPO</ident>
+        <source_coordinate>
+            <file molecule_degree="0">epon-828.gro</file>
+            <file molecule_degree="1" when="A1">epon-828_deg1_A1.gro</file>
+            <file molecule_degree="1" when="A2">epon-828_deg1_A2.gro</file>
+            <file molecule_degree="2">epon-828_deg2.gro</file>
+        </source_coordinate>
+        <source_topology>
+            <file molecule_degree="0">epon-828.itp</file>
+            <file molecule_degree="1" when="A1">epon-828_deg1_A1.itp</file>
+            <file molecule_degree="1" when="A2">epon-828_deg1_A2.itp</file>
+            <file molecule_degree="2">epon-828_deg2.itp</file>
+        </source_topology>
+        <!-- A1 beads -->
+        <cg_bead>
+            <name>A1</name>
+            <type>A</type>
+            <beads degree="1" molecule_degree="0">
+                1:EPO:C1 1:EPO:O1 1:EPO:C2 1:EPO:H1 1:EPO:H2 1:EPO:H3 1:EPO:C3 1:EPO:O2 1:EPO:H23 1:EPO:H24
+            </beads>
+            <beads degree="2" active_site="EPO:C1:4" molecule_degree="1,2">
+                1:EPO:C1 1:EPO:O1 1:EPO:C2 1:EPO:H1 1:EPO:H2 1:EPO:H3 1:EPO:C3 1:EPO:O2 1:EPO:H23 1:EPO:H24
+                1:EPO:H25
+            </beads>
+        </cg_bead>
+
+        <!-- B1 bead -->
+        <cg_bead>
+            <name>B1</name>
+            <type>B</type>
+            <beads degree="2" molecule_degree="0,1,2">
+                1:EPO:C4 1:EPO:C5 1:EPO:C6 1:EPO:C7 1:EPO:C8 1:EPO:C9 1:EPO:H6 1:EPO:H7 1:EPO:H8 1:EPO:H9 1:EPO:C10
+                1:EPO:C11 1:EPO:C12 1:EPO:H10 1:EPO:H11 1:EPO:H12 1:EPO:H13 1:EPO:H14 1:EPO:H15 1:EPO:C13 1:EPO:C14
+                1:EPO:C15 1:EPO:C16 1:EPO:C17 1:EPO:C18 1:EPO:H16 1:EPO:H17 1:EPO:H4 1:EPO:H5
+            </beads>
+        </cg_bead>
+
+        <!-- A2 bead -->
+        <cg_bead>
+            <name>A2</name>
+            <type>A</type>
+            <beads degree="1" molecule_degree="0">
+                1:EPO:C20 1:EPO:O4 1:EPO:C21 1:EPO:H22 1:EPO:H18 1:EPO:H19 1:EPO:C19 1:EPO:O3 1:EPO:H20 1:EPO:H21
+            </beads>
+            <beads degree="2" active_site="EPO:C21:4" molecule_degree="1,2">
+                1:EPO:C20 1:EPO:O4 1:EPO:C21 1:EPO:H22 1:EPO:H18 1:EPO:H19 1:EPO:C19 1:EPO:O3 1:EPO:H20 1:EPO:H21
+                1:EPO:H26
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_molecule>
+        <name>HDD</name>
+        <ident>HDD</ident>
+        <source_coordinate>
+            <file molecule_degree="0">hdde.gro</file>
+            <file molecule_degree="1" when="E1">hdde_deg1_E1.gro</file>
+            <file molecule_degree="1" when="E2">hdde_deg1_E2.gro</file>
+            <file molecule_degree="2">hdde_deg2.gro</file>
+        </source_coordinate>
+        <source_topology>
+            <file molecule_degree="0">hdde.itp</file>
+            <file molecule_degree="1" when="E1">hdde_deg1_E1.itp</file>
+            <file molecule_degree="1" when="E2">hdde_deg1_E2.itp</file>
+            <file molecule_degree="2">hdde_deg2.itp</file>
+        </source_topology>
+        <!-- E1 bead -->
+        <cg_bead>
+            <name>E1</name>
+            <type>E</type>
+            <beads degree="1" molecule_degree="0">
+                1:HDD:C1 1:HDD:O1 1:HDD:C2 1:HDD:H1 1:HDD:H2 1:HDD:H3 1:HDD:O2 1:HDD:C3 1:HDD:H4 1:HDD:H5
+            </beads>
+            <beads degree="2" active_site="HDD:C1:4" molecule_degree="1,2">
+                1:HDD:C1 1:HDD:O1 1:HDD:C2 1:HDD:H1 1:HDD:H2 1:HDD:H3 1:HDD:O2 1:HDD:C3 1:HDD:H4 1:HDD:H5
+                1:HDD:H24
+            </beads>
+        </cg_bead>
+        <!-- F1 bead -->
+        <cg_bead>
+            <name>F1</name>
+            <type>F</type>
+            <beads degree="2" molecule_degree="0,1,2">
+                1:HDD:C4 1:HDD:C5 1:HDD:C6 1:HDD:H6 1:HDD:H7 1:HDD:H8 1:HDD:H9 1:HDD:H10 1:HDD:H11 1:HDD:C7
+                1:HDD:C8 1:HDD:C9 1:HDD:H12 1:HDD:H13 1:HDD:H14 1:HDD:H15 1:HDD:H16 1:HDD:H17
+            </beads>
+        </cg_bead>
+        <!-- E2 bead -->
+        <cg_bead>
+            <name>E2</name>
+            <type>E</type>
+            <degree>1</degree>
+            <beads degree="1" molecule_degree="0">
+                1:HDD:C11 1:HDD:O4 1:HDD:C12 1:HDD:H20 1:HDD:H21 1:HDD:H22 1:HDD:O3 1:HDD:C10 1:HDD:H18 1:HDD:H19
+            </beads>
+            <beads degree="2" active_site="HDD:C12:4" molecule_degree="1,2">
+                1:HDD:C11 1:HDD:O4 1:HDD:C12 1:HDD:H20 1:HDD:H21 1:HDD:H22 1:HDD:O3 1:HDD:C10 1:HDD:H18 1:HDD:H19
+                1:HDD:H23
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_molecule>
+        <name>IPD</name>
+        <ident>IPD</ident>
+        <source_coordinate>ipd.gro</source_coordinate>
+        <source_topology>ipd.itp</source_topology>
+        <!-- monomer -->
+        <cg_bead>
+            <name>K1</name>
+            <type>K</type>
+            <beads degree="0">
+                1:IPD:C1  1:IPD:C2  1:IPD:C3
+                1:IPD:C4  1:IPD:C5  1:IPD:C6
+                1:IPD:C7  1:IPD:C8  1:IPD:C9
+                1:IPD:C10 1:IPD:H1  1:IPD:H2
+                1:IPD:H3  1:IPD:H4  1:IPD:H5
+                1:IPD:H6  1:IPD:H7  1:IPD:H10
+                1:IPD:H11 1:IPD:H14 1:IPD:H15
+                1:IPD:H16 1:IPD:H17 1:IPD:H18
+                1:IPD:H19 1:IPD:H20 1:IPD:H21
+                1:IPD:H22 1:IPD:N1  1:IPD:H8
+                1:IPD:H9  1:IPD:N2  1:IPD:H12
+                1:IPD:H13
+            </beads>
+            <beads degree="1" active_site="IPD:N1:3">
+                1:IPD:C1  1:IPD:C2  1:IPD:C3
+                1:IPD:C4  1:IPD:C5  1:IPD:C6
+                1:IPD:C7  1:IPD:C8  1:IPD:C9
+                1:IPD:C10 1:IPD:H1  1:IPD:H2
+                1:IPD:H3  1:IPD:H4  1:IPD:H5
+                1:IPD:H6  1:IPD:H7  1:IPD:H10
+                1:IPD:H11 1:IPD:H14 1:IPD:H15
+                1:IPD:H16 1:IPD:H17 1:IPD:H18
+                1:IPD:H19 1:IPD:H20 1:IPD:H21
+                1:IPD:H22 1:IPD:N1
+                1:IPD:H9  1:IPD:N2  1:IPD:H12
+                1:IPD:H13
+            </beads>
+            <beads degree="2" active_site="IPD:N1:3 IPD:N2:3">
+                1:IPD:C1  1:IPD:C2  1:IPD:C3
+                1:IPD:C4  1:IPD:C5  1:IPD:C6
+                1:IPD:C7  1:IPD:C8  1:IPD:C9
+                1:IPD:C10 1:IPD:H1  1:IPD:H2
+                1:IPD:H3  1:IPD:H4  1:IPD:H5
+                1:IPD:H6  1:IPD:H7  1:IPD:H10
+                1:IPD:H11 1:IPD:H14 1:IPD:H15
+                1:IPD:H16 1:IPD:H17 1:IPD:H18
+                1:IPD:H19 1:IPD:H20 1:IPD:H21
+                1:IPD:H22 1:IPD:N1
+                1:IPD:H9  1:IPD:N2
+                1:IPD:H13
+            </beads>
+            <beads degree="3" active_site="IPD:N1:3 IPD:N2:3">
+                1:IPD:C1  1:IPD:C2  1:IPD:C3
+                1:IPD:C4  1:IPD:C5  1:IPD:C6
+                1:IPD:C7  1:IPD:C8  1:IPD:C9
+                1:IPD:C10 1:IPD:H1  1:IPD:H2
+                1:IPD:H3  1:IPD:H4  1:IPD:H5
+                1:IPD:H6  1:IPD:H7  1:IPD:H10
+                1:IPD:H11 1:IPD:H14 1:IPD:H15
+                1:IPD:H16 1:IPD:H17 1:IPD:H18
+                1:IPD:H19 1:IPD:H20 1:IPD:H21
+                1:IPD:H22 1:IPD:N1
+                1:IPD:N2
+            </beads>
+            <beads degree="4" active_site="IPD:N1:3 IPD:N2:3">
+                1:IPD:C1 1:IPD:C2 1:IPD:C3
+                1:IPD:C4 1:IPD:C5 1:IPD:C6
+                1:IPD:C7 1:IPD:C8 1:IPD:C9
+                1:IPD:C10 1:IPD:H1 1:IPD:H2
+                1:IPD:H3 1:IPD:H4 1:IPD:H5
+                1:IPD:H6 1:IPD:H7 1:IPD:H10
+                1:IPD:H11 1:IPD:H14 1:IPD:H15
+                1:IPD:H16 1:IPD:H17 1:IPD:H18
+                1:IPD:H19 1:IPD:H20 1:IPD:H21
+                1:IPD:H22 1:IPD:N1 1:IPD:N2
+            </beads>
+        </cg_bead>
+        <!--
+        <charge_transfers>
+            <charge_transfer when="IPD:N1:2" from_atom="IPD:H8" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+            <charge_transfer when="IPD:N1:3" from_atom="IPD:H9" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+            <charge_transfer when="IPD:N2:2" from_atom="IPD:H12" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+            <charge_transfer when="IPD:N2:3" from_atom="IPD:H13" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+        </charge_transfers>
+        -->
+    </cg_molecule>
+
+    <cg_molecule>
+        <name>JEF</name>
+        <ident>JEF</ident>
+        <source_coordinate>jeff400.gro</source_coordinate>
+        <source_topology>jeff400.itp</source_topology>
+        <cg_bead>
+            <name>Q1</name>
+            <type>Q</type>
+            <beads degree="1">
+                1:JEF:N1 1:JEF:H1 1:JEF:H2
+                1:JEF:C1 1:JEF:C2 1:JEF:C3
+                1:JEF:O1 1:JEF:H3 1:JEF:H4
+                1:JEF:H5 1:JEF:H6 1:JEF:H7
+                1:JEF:H8 1:JEF:C4 1:JEF:C5
+                1:JEF:C6 1:JEF:O2 1:JEF:H9
+                1:JEF:H10 1:JEF:H11 1:JEF:H12
+                1:JEF:H13 1:JEF:H14
+            </beads>
+            <beads degree="2" active_site="JEF:N1:3">
+                1:JEF:N1 1:JEF:H2
+                1:JEF:C1 1:JEF:C2 1:JEF:C3
+                1:JEF:O1 1:JEF:H3 1:JEF:H4
+                1:JEF:H5 1:JEF:H6 1:JEF:H7
+                1:JEF:H8 1:JEF:C4 1:JEF:C5
+                1:JEF:C6 1:JEF:O2 1:JEF:H9
+                1:JEF:H10 1:JEF:H11 1:JEF:H12
+                1:JEF:H13 1:JEF:H14
+            </beads>
+            <beads degree="3" active_site="JEF:N1:3">
+                1:JEF:N1
+                1:JEF:C1 1:JEF:C2 1:JEF:C3
+                1:JEF:O1 1:JEF:H3 1:JEF:H4
+                1:JEF:H5 1:JEF:H6 1:JEF:H7
+                1:JEF:H8 1:JEF:C4 1:JEF:C5
+                1:JEF:C6 1:JEF:O2 1:JEF:H9
+                1:JEF:H10 1:JEF:H11 1:JEF:H12
+                1:JEF:H13 1:JEF:H14
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>I1</name>
+            <type>I</type>
+            <beads degree="2">
+                 1:JEF:C7 1:JEF:C8 1:JEF:C9
+                 1:JEF:O3 1:JEF:H15 1:JEF:H16
+                 1:JEF:H17 1:JEF:H18 1:JEF:H19
+                 1:JEF:H20  1:JEF:C10 1:JEF:C11
+                 1:JEF:C12 1:JEF:O4 1:JEF:H21
+                 1:JEF:H22 1:JEF:H23 1:JEF:H24
+                 1:JEF:H25 1:JEF:H26  1:JEF:C13
+                 1:JEF:C14 1:JEF:C15 1:JEF:H27
+                 1:JEF:H28 1:JEF:H29 1:JEF:H30
+                 1:JEF:H31 1:JEF:H32
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>Q2</name>
+            <type>Q</type>
+            <beads degree="1">
+                1:JEF:N2 1:JEF:H39 1:JEF:H40
+                1:JEF:C19 1:JEF:C20 1:JEF:C21
+                1:JEF:H41 1:JEF:H42 1:JEF:H43
+                1:JEF:H44 1:JEF:H45 1:JEF:H46
+                1:JEF:C16 1:JEF:C17 1:JEF:C18
+                1:JEF:O6 1:JEF:H33 1:JEF:H34
+                1:JEF:H35 1:JEF:H36 1:JEF:H37
+                1:JEF:H38 1:JEF:O5
+            </beads>
+            <beads degree="2" active_site="JEF:N2:3">
+                1:JEF:N2 1:JEF:H39 1:JEF:H40
+                1:JEF:C19 1:JEF:C20 1:JEF:C21
+                1:JEF:H41 1:JEF:H42 1:JEF:H43
+                1:JEF:H44 1:JEF:H46
+                1:JEF:C16 1:JEF:C17 1:JEF:C18
+                1:JEF:O6 1:JEF:H33 1:JEF:H34
+                1:JEF:H35 1:JEF:H36 1:JEF:H37
+                1:JEF:H38 1:JEF:O5
+            </beads>
+            <beads degree="3" active_site="JEF:N2:3">
+                1:JEF:N2 1:JEF:H39 1:JEF:H40
+                1:JEF:C19 1:JEF:C20 1:JEF:C21
+                1:JEF:H41 1:JEF:H42 1:JEF:H43
+                1:JEF:H44
+                1:JEF:C16 1:JEF:C17 1:JEF:C18
+                1:JEF:O6 1:JEF:H33 1:JEF:H34
+                1:JEF:H35 1:JEF:H36 1:JEF:H37
+                1:JEF:H38 1:JEF:O5
+            </beads>
+        </cg_bead>
+        <!--
+        <charge_transfers>
+            <charge_transfer when="JEF:N1:2" from_atom="JEF:H1" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+            <charge_transfer when="JEF:N1:3" from_atom="JEF:H2" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+            <charge_transfer when="JEF:N2:2" from_atom="JEF:H45" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+            <charge_transfer when="JEF:N2:3" from_atom="JEF:H46" when_to_atom="EPO:C1#H25,EPO:C21#H26,HDD:C1#H24,HDD:C12#H23" />
+        </charge_transfers>
+        -->
+    </cg_molecule>
+
+    <cg_configuration>
+        <format>GROMACS</format>
+            <file>cg_cl_conf.gro</file>
+        <topology>cg_cl_topol.top</topology>
+    </cg_configuration>
+
+    <hybrid_configuration>
+        <file>hyb_conf.gro</file>
+        <format>GROMACS</format>
+    </hybrid_configuration>
+
+    <hybrid_topology>
+        <file>hyb_topol.top</file>
+        <bonds params="; EPO_C1/C2-IPD_N1/N2">
+            EPO:C1 IPD:N1
+            EPO:C1 IPD:N2
+            EPO:C21 IPD:N1
+            EPO:C21 IPD:N2
+        </bonds>
+        <bonds params="; EPO_C1/C2_JEF_N1/N2">
+            EPO:C1 JEF:N1
+            EPO:C1 JEF:N2
+            EPO:C21 JEF:N1
+            EPO:C21 JEF:N2
+        </bonds>
+        <bonds params="; HDD_C1/C2_IPD_N1/N2">
+            HDD:C1 IPD:N1
+            HDD:C1 IPD:N2
+            HDD:C12 IPD:N1
+            HDD:C12 IPD:N2
+        </bonds>
+        <bonds params="; HDD_C1/C2_JEF_N1/N2">
+            HDD:C1 JEF:N1
+            HDD:C1 JEF:N2
+            HDD:C12 JEF:N1
+            HDD:C12 JEF:N2
+        </bonds>
+        <angles params="; CROSS_BCK">
+            EPO:C1 IPD:N1 IPD:C1
+            EPO:C21 IPD:N2 IPD:C7
+            EPO:C1 IPD:N1 IPD:H9
+            EPO:C21 IPD:N2 IPD:H13
+            EPO:C21 JEF:N2 JEF:H46
+            IPD:N1 EPO:C1 EPO:H1
+            IPD:N1 EPO:C1 EPO:H2
+            IPD:N2 EPO:C21 EPO:H21
+            JEF:N2 EPO:C21 EPO:H18
+            JEF:N2 EPO:C21 EPO:H19
+            IPD:N2 EPO:C21 EPO:H22
+            EPO:C21 JEF:N2 JEF:C20
+            IPD:N1 EPO:C1 EPO:C2
+            IPD:N2 EPO:C21 EPO:C20
+            JEF:N2 EPO:C21 EPO:C20
+EPO:C1 IPD:N1 EPO:C1
+EPO:C1 IPD:N1 EPO:C21
+EPO:C1 IPD:N1 HDD:C1
+EPO:C1 IPD:N1 HDD:C12
+EPO:C1 IPD:N2 EPO:C1
+EPO:C1 IPD:N2 EPO:C21
+EPO:C1 IPD:N2 HDD:C1
+EPO:C1 IPD:N2 HDD:C12
+EPO:C1 IPD:N2 IPD:C7
+EPO:C1 IPD:N2 IPD:H13
+EPO:C21 IPD:N1 EPO:C21
+EPO:C21 IPD:N1 HDD:C1
+EPO:C21 IPD:N1 HDD:C12
+EPO:C21 IPD:N1 IPD:C1
+EPO:C21 IPD:N1 IPD:H9
+EPO:C21 IPD:N2 EPO:C21
+EPO:C21 IPD:N2 HDD:C1
+EPO:C21 IPD:N2 HDD:C12
+HDD:C1 IPD:N1 IPD:C1
+HDD:C1 IPD:N1 IPD:H9
+HDD:C1 IPD:N2 IPD:C7
+HDD:C12 IPD:N1 IPD:C1
+HDD:C12 IPD:N2 IPD:C7
+HDD:C12 IPD:N2 IPD:H13
+IPD:N1 EPO:C21 EPO:C20
+IPD:N1 EPO:C21 EPO:H18
+IPD:N1 EPO:C21 EPO:H19
+IPD:N1 EPO:C21 EPO:H21
+IPD:N1 EPO:C21 EPO:H22
+IPD:N1 HDD:C1 HDD:C2
+IPD:N1 HDD:C1 HDD:H1
+IPD:N1 HDD:C1 HDD:H2
+IPD:N1 HDD:C12 HDD:C11
+IPD:N1 HDD:C12 HDD:H21
+IPD:N1 HDD:C12 HDD:H22
+IPD:N2 EPO:C1 EPO:C2
+IPD:N2 EPO:C1 EPO:H1
+IPD:N2 EPO:C1 EPO:H2
+IPD:N2 EPO:C21 EPO:H18
+IPD:N2 EPO:C21 EPO:H19
+IPD:N2 HDD:C1 HDD:C2
+IPD:N2 HDD:C1 HDD:H1
+IPD:N2 HDD:C1 HDD:H2
+IPD:N2 HDD:C12 HDD:C11
+IPD:N2 HDD:C12 HDD:H21
+IPD:N2 HDD:C12 HDD:H22
+        </angles>
+        <!-- add angles, dihedrals, pairs?? -->
+        <molecule_type>
+            <name>HYB</name>
+            <exclusion>3</exclusion>
+        </molecule_type>
+        <include>
+            ;"/apps/leuven/thinking/2014a/software/GROMACS/5.0.4-intel-2014a-hybrid/share/gromacs/top/oplsaa.ff/forcefield.itp"
+            "/usr/share/gromacs/top/oplsaa.ff/forcefield.itp"
+        </include>
+        <system>HYB</system>
+    </hybrid_topology>
+</settings>

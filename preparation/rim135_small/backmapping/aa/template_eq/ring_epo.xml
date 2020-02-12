@@ -1,0 +1,27 @@
+<cg_molecule>
+  <name>EPO</name>
+	<ident>EPO</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>A1</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads> 1:EPO:C6 1:EPO:C7 1:EPO:C8 1:EPO:C9 1:EPO:C5 1:EPO:C4 </beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A2</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads> 1:EPO:C16 1:EPO:C17 1:EPO:C18 1:EPO:C13 1:EPO:C14 1:EPO:C5 </beads>
+      </cg_bead>
+  </cg_beads>
+  </topology>
+  <maps>
+    <map>
+      <name>A</name>
+      <weights> 12.0107 12.0107 12.0107 12.0107 12.0107 12.0107 </weights>
+    </map>
+</maps>
+<exclusions name="excl" />
+</cg_molecule>

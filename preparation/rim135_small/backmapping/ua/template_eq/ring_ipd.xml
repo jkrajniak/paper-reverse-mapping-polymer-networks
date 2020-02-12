@@ -1,0 +1,21 @@
+<cg_molecule>
+  <name>IPD</name>
+	<ident>IPD</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>A1</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads> 1:IPD:C1 1:IPD:C2 1:IPD:C3 1:IPD:C4 1:IPD:C5 1:IPD:C6 </beads>
+      </cg_bead>
+  </cg_beads>
+  </topology>
+  <maps>
+    <map>
+      <name>A</name>
+      <weights> 12.0107 12.0107 12.0107 12.0107 12.0107 12.0107 </weights>
+    </map>
+</maps>
+<exclusions name="excl" />
+</cg_molecule>

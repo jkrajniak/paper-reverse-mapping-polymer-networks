@@ -1,0 +1,5 @@
+<topology base="topol.tpr">
+    <molecules>
+        <split/>
+    </molecules>
+</topology>

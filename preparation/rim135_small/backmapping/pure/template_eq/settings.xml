@@ -1,0 +1,34 @@
+<cg>
+    <!-- example for a non-bonded interaction entry -->
+    <non-bonded>
+        <name>ring-ring</name>
+        <type1>A</type1>
+        <type2>A</type2>
+        <min>0.0</min>
+        <max>1.0</max>
+        <step>0.002</step>
+        <inverse>
+            <target>ring-ring.xvg</target>
+            <min>0.0</min>
+            <max>1.0</max>
+            <step>0.002</step>
+            <post_add>convergence</post_add>
+            <post_add_options><convergence><norm>2</norm></convergence></post_add_options>
+            <post_update> smooth </post_update>
+            <post_update_options>
+                <scale>0.5</scale>
+                <smooth><iterations>3</iterations></smooth>
+                <pressure>
+                    <type>simple</type>
+                    <do>1</do>
+                    <simple><scale>0.001</scale></simple>
+                </pressure>
+            </post_update_options>
+            <p_target>1.0</p_target>
+            <gromacs>
+                <table>table_A_A.xvg</table>
+            </gromacs>
+            <do_potential> 1 0 0 </do_potential>
+        </inverse>
+    </non-bonded>
+</cg>
