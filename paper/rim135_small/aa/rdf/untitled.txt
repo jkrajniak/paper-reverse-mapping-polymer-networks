@@ -1,0 +1,9 @@
+#         if at_name == 'ring-ring':
+#             d[:179] = 0.0
+#         elif at_name == 'N_H':
+#             d[:39] = 0.0
+#         elif at_name == 'C_N_excl': 
+#             r = 150
+#             ee = d[:r][:, 1]
+#             ee[ee > 0.02] = 0.0
+#             d[:r][:, 1] = ee
