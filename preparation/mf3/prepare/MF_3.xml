@@ -1,0 +1,49 @@
+<cg_molecule>
+  <name>MOL</name>
+	<ident>MOL</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>A1</name>
+        <type>A</type>
+        <symmetry>1</symmetry>
+        <mapping>A</mapping>
+        <beads> 1:LIG:N11 1:LIG:C11 1:LIG:N21 1:LIG:C1 1:LIG:O1 1:LIG:H01 1:LIG:H011 1:LIG:H012 1:LIG:H21 </beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A2</name>
+        <type>A</type>
+        <symmetry>1</symmetry>
+        <mapping>A</mapping>
+        <beads> 1:LIG:N12 1:LIG:C12 1:LIG:N22 1:LIG:C2 1:LIG:O2 1:LIG:H02 1:LIG:H021 1:LIG:H022 1:LIG:H31 </beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A3</name>
+        <type>A</type>
+        <symmetry>1</symmetry>
+        <mapping>A</mapping>
+        <beads> 1:LIG:N13 1:LIG:C13 1:LIG:N23 1:LIG:C3 1:LIG:O3 1:LIG:H03 1:LIG:H031 1:LIG:H032 1:LIG:H11 </beads>
+      </cg_bead>
+
+    </cg_beads>
+    <cg_bonded>
+
+      <bond>
+        <name>bond</name>
+        <beads>
+        A1 A2 
+        A2 A3 
+        A3 A1 
+        </beads>
+      </bond>
+
+    </cg_bonded>
+  </topology>
+
+  <maps>
+    <map>
+      <name>A</name>
+      <weights> 14.0067 12.0107 14.0067  12.0107 15.996  1.008 1.008 1.008 1.008 </weights>
+    </map>
+  </maps>
+</cg_molecule>

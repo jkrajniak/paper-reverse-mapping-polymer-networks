@@ -1,0 +1,21 @@
+<cg_molecule>
+  <name>MF</name>
+	<ident>MF</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>A1</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads> 1:MF:N11 1:MF:C11 1:MF:N12 1:MF:C12 1:MF:N13 1:MF:C13 </beads>
+      </cg_bead>
+  </cg_beads>
+  </topology>
+  <maps>
+    <map>
+      <name>A</name>
+      <weights> 14.0067  12.0107 14.0067 12.0107 14.0067 12.0107 </weights>
+    </map>
+</maps>
+<exclusions name="excl" />
+</cg_molecule>

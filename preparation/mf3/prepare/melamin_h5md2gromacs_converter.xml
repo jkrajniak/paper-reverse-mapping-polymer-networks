@@ -1,0 +1,11 @@
+<cg_configuration>
+    <type2chain>
+        0:MF:A
+    </type2chain>
+    <name_seq seq="0" chain_name="MF" res_name="MF">
+        A1
+    </name_seq>
+    <molecule_type name="MF" nrexcl="3" nrmols="1" size="1"/>
+
+    <h5md atom_groups="atoms" connection_groups="chem_bonds_0"/>
+</cg_configuration>

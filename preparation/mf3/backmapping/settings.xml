@@ -1,0 +1,106 @@
+<settings>
+    <cg_molecule>
+        <name>MF</name>
+        <ident>MF</ident>
+        <source_coordinate>single_mf.gro</source_coordinate>
+        <source_topology>at_topol.top</source_topology>
+        <!-- A1 beads -->
+        <cg_bead>
+            <name>A1</name>
+            <type>A</type>
+            <beads degree="2">
+                1:MF:N11 1:MF:C11 1:MF:N21 1:MF:C1 1:MF:O1 1:MF:H01 1:MF:H011 1:MF:H012 1:MF:H21
+                <charge_map>
+                    -0.407377 0.682493 -0.299731 0.024669 0.0 0.0 0.0 0.0 0.0
+                </charge_map>
+            </beads>
+            <beads degree="3" active_site="MF:O1:2 MF:C1:4">
+                1:MF:N11 1:MF:C11 1:MF:N21 1:MF:C1 1:MF:O1 1:MF:H01 1:MF:H011 1:MF:H012 1:MF:H21
+                <charge_map>
+                    -0.407377 0.682493 -0.299731 0.024669 0.0 0.0 0.0 0.0 0.0
+                </charge_map>s
+                <remove active_site="MF:C1">1:MF:O1 1:MF:H01</remove>
+                <remove active_site="MF:O1">1:MF:H01</remove>
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>A2</name>
+            <type>A</type>
+            <beads degree="2">
+                1:MF:N12 1:MF:C12 1:MF:N22 1:MF:C2 1:MF:O2 1:MF:H02 1:MF:H021 1:MF:H022 1:MF:H31
+                <charge_map>
+                    -0.407374 0.682437 -0.299729 0.024672 0.0 0.0 0.0 0.0 0.0
+                </charge_map>
+            </beads>
+            <beads degree="3" active_site="MF:O2:2 MF:C2:4">
+                1:MF:N12 1:MF:C12 1:MF:N22 1:MF:C2 1:MF:O2 1:MF:H02 1:MF:H021 1:MF:H022 1:MF:H31
+                <charge_map>
+                    -0.407374 0.682437 -0.299729 0.024672 0.0 0.0 0.0 0.0 0.0
+                </charge_map>s
+                <remove active_site="MF:C2">1:MF:O2 1:MF:H02</remove>
+                <remove active_site="MF:O2">1:MF:H02</remove>
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>A3</name>
+            <type>A</type>
+            <beads degree="2">
+                1:MF:N13 1:MF:C13 1:MF:N23 1:MF:C3 1:MF:O3 1:MF:H03 1:MF:H031 1:MF:H032 1:MF:H11
+                <charge_map>
+                    -0.407483 0.682492 -0.299758 0.024689 0.0 0.0 0.0 0.0 0.0
+                </charge_map>
+            </beads>
+            <beads degree="3" active_site="MF:O3:2 MF:C3:4">
+                1:MF:N13 1:MF:C13 1:MF:N23 1:MF:C3 1:MF:O3 1:MF:H03 1:MF:H031 1:MF:H032 1:MF:H11
+                <charge_map>
+                    -0.407483 0.682492 -0.299758 0.024689 0.0 0.0 0.0 0.0 0.0
+                </charge_map>s
+                <remove active_site="MF:C3">1:MF:O3 1:MF:H03</remove>
+                <remove active_site="MF:O3">1:MF:H03</remove>
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_configuration>
+        <coordinate>cg_conf.gro</coordinate>
+        <topology>cg_topol.top</topology>
+    </cg_configuration>
+
+    <hybrid_configuration>
+        <file>hyb_conf.gro</file>
+        <format>GROMACS</format>
+    </hybrid_configuration>
+
+    <hybrid_topology>
+        <file>hyb_topol.top</file>
+        <bonds params=" ; AT cross bonds">
+            MF:O1 MF:C1
+            MF:O1 MF:C2
+            MF:O1 MF:C3
+            MF:O2 MF:C1
+            MF:O2 MF:C2
+            MF:O2 MF:C3
+            MF:O3 MF:C1
+            MF:O3 MF:C2
+            MF:O3 MF:C3
+        </bonds>
+
+        <angles params=" ; AT cross angles">
+
+        </angles>
+        <dihedrals params="; AT dihedrals">
+
+        </dihedrals>
+        <!-- add angles, dihedrals, pairs?? -->
+        <molecule_type>
+            <name>HYB</name>
+            <exclusion>3</exclusion>
+        </molecule_type>
+        <include>
+            "/apps/leuven/thinking/2014a/software/GROMACS/5.0.4-intel-2014a-hybrid/share/gromacs/top/oplsaa.ff/forcefield.itp"
+            ;"/usr/share/gromacs/top/oplsaa.ff/forcefield.itp"
+            ;"/cw/chemie-home/u0092404/chemie-data/software/gromacs/5.1.1/share/gromacs/top/oplsaa.ff/forcefield.itp""
+        </include>
+        <system>HYB</system>
+    </hybrid_topology>
+</settings>

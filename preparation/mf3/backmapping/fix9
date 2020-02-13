@@ -1,0 +1,14 @@
+#!/bin/bash -l
+
+n_proc=$(cat $PBS_NODEFILE | wc -l)
+n_node=$(cat $PBS_NODEFILE | uniq | wc -l)
+
+
+#rng="`shuf -i12345-99999 -n1`"
+rng=86790
+alpha=0.001
+s=fix9
+mkdir -p data_s${s}
+mkdir -p gmx_s${s}/${alpha}
+mpirun -n 18 start_backmapping.py @params9_fix2 --rng_seed ${rng}  --alpha $alpha --output_prefix data_s${s}/sim0
+alpha1=`awk "BEGIN { print $alpha }"`
