@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<cg_molecule>
+  <name>DIO</name>
+  <ident>MOL</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>D</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>1:DIO:O1 1:DIO:C1 1:DIO:C2 1:DIO:O2 1:DIO:H1 1:DIO:H2 1:DIO:H3 1:DIO:H4 1:DIO:H5 1:DIO:H6</beads>
+      </cg_bead>
+    </cg_beads>
+    <cg_bonded>
+    </cg_bonded>
+  </topology>
+  <maps>
+    <map>
+      <name>D</name>
+      <weights>15.99 12.011 12.011 15.99 1.008 1.008 1.008 1.008 1.008 1.008</weights>
+    </map>
+  </maps>
+</cg_molecule>

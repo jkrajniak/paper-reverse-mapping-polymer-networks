@@ -1,0 +1,23 @@
+<cg>
+  <bonded>
+    <name>dihedral</name>
+    <min>-3.1415</min>
+    <max>3.1415</max>
+    <step>0.01</step>
+    <inverse>
+      <gromacs>
+        <table>table_d1.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+
+  <inverse>
+    <gromacs>
+      <pot_max>1.65</pot_max>
+      <table_end>3.1415</table_end>
+      <min>0.0</min>
+      <max>3.1415</max>
+      <table_bins>0.004</table_bins>
+    </gromacs>
+  </inverse>
+</cg>

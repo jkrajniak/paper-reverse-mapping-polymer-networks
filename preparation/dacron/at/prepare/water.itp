@@ -1,0 +1,10 @@
+#include "/apps/leuven/thinking/2014a/software/GROMACS/4.6.5-intel-2014a-hybrid/share/gromacs/top//oplsaa.ff/forcefield.itp"
+#include "./spce.itp"
+ 
+[ system ]
+; Name
+Water
+
+[ molecules ]
+; Compound        #mols
+SOL             1000

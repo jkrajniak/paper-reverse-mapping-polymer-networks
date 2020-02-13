@@ -1,0 +1,22 @@
+; configuration for polyester dicor polyester
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               1               no             0.0     0.0
+
+[ atomtypes ]
+A 44.999   0.000  A   1.0   1.0
+B 76.098   0.000  A   1.0   1.0
+D 62.05    0.000  A   1.0   1.0
+
+#include "./diol_cg.itp"
+#include "./ter_cg.itp"
+
+[ system ]
+; Name
+DICOR
+
+[ molecules ]
+; Compound        #mols
+DIO                1000
+TER                1000

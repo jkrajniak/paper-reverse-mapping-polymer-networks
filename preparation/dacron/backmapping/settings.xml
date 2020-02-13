@@ -1,0 +1,135 @@
+<settings>
+    <cg_molecule>
+        <name>H2O</name>
+        <ident>H2O</ident>
+        <source_coordinate><file molecule_degree="*">h2o.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">h2o.itp</file></source_topology>
+        <cg_bead>
+            <name>W1</name>
+            <type>W</type>
+            <beads>
+                1:H2O:O1 1:H2O:H1 1:H2O:H2
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_molecule equilibrate_charges="1">
+        <name>DIO</name>
+        <ident>DIO</ident>
+        <source_coordinate>
+            <file molecule_degree="*">diol.gro</file>
+        </source_coordinate>
+        <source_topology>
+            <file molecule_degree="*">diol.itp</file>
+        </source_topology>
+        <cg_bead>
+            <name>D1</name>
+            <type>D</type>
+            <beads degree="0" molecule_degree="0">
+                1:DIO:O1 1:DIO:C1 1:DIO:C2 1:DIO:O2 1:DIO:H1 1:DIO:H2 1:DIO:H3 1:DIO:H4 1:DIO:H5 1:DIO:H6
+            </beads>
+        </cg_bead>
+
+        <!-- B1 bead -->
+        <cg_bead>
+            <name>E1</name>
+            <type>E</type>
+            <beads degree="1" molecule_degree="1" active_site="DIO:C1:4">
+                1:DIO:C1 1:DIO:C2 1:DIO:O2 1:DIO:H2 1:DIO:H3 1:DIO:H4 1:DIO:H5 1:DIO:H6
+            </beads>
+            <beads degree="2" molecule_degree="2" active_site="DIO:C1:4 DIO:C2:4">
+                1:DIO:C1 1:DIO:C2 1:DIO:H2 1:DIO:H3 1:DIO:H4 1:DIO:H5
+                <charge_map>  <!-- this is a parial map, we impose that C1 and C2 will have zero charge, only works when equilibrated_charges=1 -->
+                    0.0 0.0 * * * *
+                </charge_map>
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_molecule equilibrate_charges="1">
+        <name>TER</name>
+        <ident>TER</ident>
+        <source_coordinate>
+            <file molecule_degree="*">ter.gro</file>
+        </source_coordinate>
+        <source_topology>
+            <file molecule_degree="*">ter.itp</file>
+        </source_topology>
+        <!-- A1 bead -->
+        <cg_bead>
+            <name>A1</name>
+            <type>A</type>
+            <beads degree="1" molecule_degree="0">
+                1:TER:O1 1:TER:C1 1:TER:O2 1:TER:H5
+            </beads>
+        </cg_bead>
+        <!-- C1 bead -->
+        <cg_bead>
+            <name>Q1</name>
+            <type>C</type>
+            <beads degree="2" molecule_degree="2" active_site="TER:O1:2">
+                1:TER:O1 1:TER:C1 1:TER:O2
+                <charge_map>
+                    0.0 * *
+                </charge_map>
+            </beads>
+        </cg_bead>
+        <!-- B1 bead -->
+        <cg_bead>
+            <name>B1</name>
+            <type>B</type>
+            <beads>
+                1:TER:C2 1:TER:C3 1:TER:C4 1:TER:C5 1:TER:C6 1:TER:C7 1:TER:H1 1:TER:H2 1:TER:H3 1:TER:H4
+            </beads>
+        </cg_bead>
+        <!-- A2 bead -->
+        <cg_bead>
+            <name>A2</name>
+            <type>A</type>
+            <beads degree="1" molecule_degree="0">
+                1:TER:O3 1:TER:C8 1:TER:O4 1:TER:H6
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>Q2</name>
+            <type>C</type>
+            <beads degree="2" molecule_degree="2" active_site="TER:O4:2">
+                1:TER:O4 1:TER:C8 1:TER:O3
+                <charge_map>
+                    0.0 * *
+                </charge_map>
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_configuration>
+        <format>GROMACS</format>
+            <file>cg_conf.gro</file>
+        <topology>cg_topol.top</topology>
+    </cg_configuration>
+
+    <hybrid_configuration>
+        <file>hyb_conf.gro</file>
+        <format>GROMACS</format>
+    </hybrid_configuration>
+
+    <hybrid_topology>
+        <file>hyb_topol.top</file>
+        <bonds params="; DIO_C1/C2_TER_O1/O4">
+            DIO:C1 TER:O1
+            DIO:C1 TER:O4
+            DIO:C2 TER:O1
+            DIO:C2 TER:O4
+        </bonds>
+        <!-- add angles, dihedrals, pairs?? -->
+        <molecule_type>
+            <name>HYB</name>
+            <exclusion>3</exclusion>
+        </molecule_type>
+        <include>
+            ;"/apps/leuven/thinking/2014a/software/GROMACS/5.0.4-intel-2014a-hybrid/share/gromacs/top/oplsaa.ff/forcefield.itp"
+            "/usr/share/gromacs/top/oplsaa.ff/forcefield.itp"
+        </include>
+        <system>HYB</system>
+    </hybrid_topology>
+</settings>

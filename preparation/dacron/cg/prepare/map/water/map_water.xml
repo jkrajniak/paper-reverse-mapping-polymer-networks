@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<cg_molecule>
+  <name>SOL</name>
+  <ident>SOL</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>W1</name>
+        <type>W</type>
+        <mapping>W</mapping>
+        <beads>1:SOL:O1 1:SOL:H1 1:SOL:H2</beads>
+      </cg_bead>
+    </cg_beads>
+    <cg_bonded>
+    </cg_bonded>
+  </topology>
+  <maps>
+    <map>
+      <name>W</name>
+      <weights>15.99 1.008 1.008</weights>
+    </map>
+  </maps>
+</cg_molecule>

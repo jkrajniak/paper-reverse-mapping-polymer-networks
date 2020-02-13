@@ -1,0 +1,224 @@
+; configuration for pe_100 (75 chains)
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               1               no             0.0     0.0
+
+[ atomtypes ]
+A 29.061999   0.000  A   1.0   1.0
+B 28.053999   0.000  A   1.0   1.0
+
+[ moleculetype ]
+PE 3
+
+[atoms]
+; nr type resnr residue atom cgnr charge mass
+1 A 1 PE A1 1 0.000000 29.061999
+2 B 1 PE B1 2 0.000000 28.053999
+3 B 1 PE B2 3 0.000000 28.053999
+4 B 1 PE B3 4 0.000000 28.053999
+5 B 1 PE B4 5 0.000000 28.053999
+6 B 1 PE B5 6 0.000000 28.053999
+7 B 1 PE B6 7 0.000000 28.053999
+8 B 1 PE B7 8 0.000000 28.053999
+9 B 1 PE B8 9 0.000000 28.053999
+10 B 1 PE B9 10 0.000000 28.053999
+11 B 1 PE B10 11 0.000000 28.053999
+12 B 1 PE B11 12 0.000000 28.053999
+13 B 1 PE B12 13 0.000000 28.053999
+14 B 1 PE B13 14 0.000000 28.053999
+15 B 1 PE B14 15 0.000000 28.053999
+16 B 1 PE B15 16 0.000000 28.053999
+17 B 1 PE B16 17 0.000000 28.053999
+18 B 1 PE B17 18 0.000000 28.053999
+19 B 1 PE B18 19 0.000000 28.053999
+20 B 1 PE B19 20 0.000000 28.053999
+21 B 1 PE B20 21 0.000000 28.053999
+22 B 1 PE B21 22 0.000000 28.053999
+23 B 1 PE B22 23 0.000000 28.053999
+24 B 1 PE B23 24 0.000000 28.053999
+25 B 1 PE B24 25 0.000000 28.053999
+26 B 1 PE B25 26 0.000000 28.053999
+27 B 1 PE B26 27 0.000000 28.053999
+28 B 1 PE B27 28 0.000000 28.053999
+29 B 1 PE B28 29 0.000000 28.053999
+30 B 1 PE B29 30 0.000000 28.053999
+31 B 1 PE B30 31 0.000000 28.053999
+32 B 1 PE B31 32 0.000000 28.053999
+33 B 1 PE B32 33 0.000000 28.053999
+34 B 1 PE B33 34 0.000000 28.053999
+35 B 1 PE B34 35 0.000000 28.053999
+36 B 1 PE B35 36 0.000000 28.053999
+37 B 1 PE B36 37 0.000000 28.053999
+38 B 1 PE B37 38 0.000000 28.053999
+39 B 1 PE B38 39 0.000000 28.053999
+40 B 1 PE B39 40 0.000000 28.053999
+41 B 1 PE B40 41 0.000000 28.053999
+42 B 1 PE B41 42 0.000000 28.053999
+43 B 1 PE B42 43 0.000000 28.053999
+44 B 1 PE B43 44 0.000000 28.053999
+45 B 1 PE B44 45 0.000000 28.053999
+46 B 1 PE B45 46 0.000000 28.053999
+47 B 1 PE B46 47 0.000000 28.053999
+48 B 1 PE B47 48 0.000000 28.053999
+49 B 1 PE B48 49 0.000000 28.053999
+50 A 1 PE A2 50 0.000000 29.061999
+
+
+[ dihedrals ]
+1 2 3 4   8 1 1.0 ;table_d1.xvg
+2 3 4 5   8 1 1.0 ;table_d1.xvg
+3 4 5 6   8 1 1.0 ;table_d1.xvg
+4 5 6 7   8 1 1.0 ;table_d1.xvg
+5 6 7 8   8 1 1.0 ;table_d1.xvg
+6 7 8 9   8 1 1.0 ;table_d1.xvg
+7 8 9 10   8 1 1.0 ;table_d1.xvg
+8 9 10 11   8 1 1.0 ;table_d1.xvg
+9 10 11 12   8 1 1.0 ;table_d1.xvg
+10 11 12 13   8 1 1.0 ;table_d1.xvg
+11 12 13 14   8 1 1.0 ;table_d1.xvg
+12 13 14 15   8 1 1.0 ;table_d1.xvg
+13 14 15 16   8 1 1.0 ;table_d1.xvg
+14 15 16 17   8 1 1.0 ;table_d1.xvg
+15 16 17 18   8 1 1.0 ;table_d1.xvg
+16 17 18 19   8 1 1.0 ;table_d1.xvg
+17 18 19 20   8 1 1.0 ;table_d1.xvg
+18 19 20 21   8 1 1.0 ;table_d1.xvg
+19 20 21 22   8 1 1.0 ;table_d1.xvg
+20 21 22 23   8 1 1.0 ;table_d1.xvg
+21 22 23 24   8 1 1.0 ;table_d1.xvg
+22 23 24 25   8 1 1.0 ;table_d1.xvg
+23 24 25 26   8 1 1.0 ;table_d1.xvg
+24 25 26 27   8 1 1.0 ;table_d1.xvg
+25 26 27 28   8 1 1.0 ;table_d1.xvg
+26 27 28 29   8 1 1.0 ;table_d1.xvg
+27 28 29 30   8 1 1.0 ;table_d1.xvg
+28 29 30 31   8 1 1.0 ;table_d1.xvg
+29 30 31 32   8 1 1.0 ;table_d1.xvg
+30 31 32 33   8 1 1.0 ;table_d1.xvg
+31 32 33 34   8 1 1.0 ;table_d1.xvg
+32 33 34 35   8 1 1.0 ;table_d1.xvg
+33 34 35 36   8 1 1.0 ;table_d1.xvg
+34 35 36 37   8 1 1.0 ;table_d1.xvg
+35 36 37 38   8 1 1.0 ;table_d1.xvg
+36 37 38 39   8 1 1.0 ;table_d1.xvg
+37 38 39 40   8 1 1.0 ;table_d1.xvg
+38 39 40 41   8 1 1.0 ;table_d1.xvg
+39 40 41 42   8 1 1.0 ;table_d1.xvg
+40 41 42 43   8 1 1.0 ;table_d1.xvg
+41 42 43 44   8 1 1.0 ;table_d1.xvg
+42 43 44 45   8 1 1.0 ;table_d1.xvg
+43 44 45 46   8 1 1.0 ;table_d1.xvg
+44 45 46 47   8 1 1.0 ;table_d1.xvg
+45 46 47 48   8 1 1.0 ;table_d1.xvg
+46 47 48 49   8 1 1.0 ;table_d1.xvg
+47 48 49 50   8 1 1.0 ;table_d1.xvg
+
+[ angles ]
+2 3 4   8 2 1.0 ;table_a2.xvg
+3 4 5   8 2 1.0 ;table_a2.xvg
+4 5 6   8 2 1.0 ;table_a2.xvg
+5 6 7   8 2 1.0 ;table_a2.xvg
+6 7 8   8 2 1.0 ;table_a2.xvg
+7 8 9   8 2 1.0 ;table_a2.xvg
+8 9 10   8 2 1.0 ;table_a2.xvg
+9 10 11   8 2 1.0 ;table_a2.xvg
+10 11 12   8 2 1.0 ;table_a2.xvg
+11 12 13   8 2 1.0 ;table_a2.xvg
+12 13 14   8 2 1.0 ;table_a2.xvg
+13 14 15   8 2 1.0 ;table_a2.xvg
+14 15 16   8 2 1.0 ;table_a2.xvg
+15 16 17   8 2 1.0 ;table_a2.xvg
+16 17 18   8 2 1.0 ;table_a2.xvg
+17 18 19   8 2 1.0 ;table_a2.xvg
+18 19 20   8 2 1.0 ;table_a2.xvg
+19 20 21   8 2 1.0 ;table_a2.xvg
+20 21 22   8 2 1.0 ;table_a2.xvg
+21 22 23   8 2 1.0 ;table_a2.xvg
+22 23 24   8 2 1.0 ;table_a2.xvg
+23 24 25   8 2 1.0 ;table_a2.xvg
+24 25 26   8 2 1.0 ;table_a2.xvg
+25 26 27   8 2 1.0 ;table_a2.xvg
+26 27 28   8 2 1.0 ;table_a2.xvg
+27 28 29   8 2 1.0 ;table_a2.xvg
+28 29 30   8 2 1.0 ;table_a2.xvg
+29 30 31   8 2 1.0 ;table_a2.xvg
+30 31 32   8 2 1.0 ;table_a2.xvg
+31 32 33   8 2 1.0 ;table_a2.xvg
+32 33 34   8 2 1.0 ;table_a2.xvg
+33 34 35   8 2 1.0 ;table_a2.xvg
+34 35 36   8 2 1.0 ;table_a2.xvg
+35 36 37   8 2 1.0 ;table_a2.xvg
+36 37 38   8 2 1.0 ;table_a2.xvg
+37 38 39   8 2 1.0 ;table_a2.xvg
+38 39 40   8 2 1.0 ;table_a2.xvg
+39 40 41   8 2 1.0 ;table_a2.xvg
+40 41 42   8 2 1.0 ;table_a2.xvg
+41 42 43   8 2 1.0 ;table_a2.xvg
+42 43 44   8 2 1.0 ;table_a2.xvg
+43 44 45   8 2 1.0 ;table_a2.xvg
+44 45 46   8 2 1.0 ;table_a2.xvg
+45 46 47   8 2 1.0 ;table_a2.xvg
+46 47 48   8 2 1.0 ;table_a2.xvg
+47 48 49   8 2 1.0 ;table_a2.xvg
+1 2 3   8 1 1.0 ;table_a1.xvg
+48 49 50   8 1 1.0 ;table_a1.xvg
+
+[ bonds ]
+1 2   8 2 1.0 ;table_b2.xvg
+2 3   8 1 1.0 ;table_b1.xvg
+3 4   8 1 1.0 ;table_b1.xvg
+4 5   8 1 1.0 ;table_b1.xvg
+5 6   8 1 1.0 ;table_b1.xvg
+6 7   8 1 1.0 ;table_b1.xvg
+7 8   8 1 1.0 ;table_b1.xvg
+8 9   8 1 1.0 ;table_b1.xvg
+9 10   8 1 1.0 ;table_b1.xvg
+10 11   8 1 1.0 ;table_b1.xvg
+11 12   8 1 1.0 ;table_b1.xvg
+12 13   8 1 1.0 ;table_b1.xvg
+13 14   8 1 1.0 ;table_b1.xvg
+14 15   8 1 1.0 ;table_b1.xvg
+15 16   8 1 1.0 ;table_b1.xvg
+16 17   8 1 1.0 ;table_b1.xvg
+17 18   8 1 1.0 ;table_b1.xvg
+18 19   8 1 1.0 ;table_b1.xvg
+19 20   8 1 1.0 ;table_b1.xvg
+20 21   8 1 1.0 ;table_b1.xvg
+21 22   8 1 1.0 ;table_b1.xvg
+22 23   8 1 1.0 ;table_b1.xvg
+23 24   8 1 1.0 ;table_b1.xvg
+24 25   8 1 1.0 ;table_b1.xvg
+25 26   8 1 1.0 ;table_b1.xvg
+26 27   8 1 1.0 ;table_b1.xvg
+27 28   8 1 1.0 ;table_b1.xvg
+28 29   8 1 1.0 ;table_b1.xvg
+29 30   8 1 1.0 ;table_b1.xvg
+30 31   8 1 1.0 ;table_b1.xvg
+31 32   8 1 1.0 ;table_b1.xvg
+32 33   8 1 1.0 ;table_b1.xvg
+33 34   8 1 1.0 ;table_b1.xvg
+34 35   8 1 1.0 ;table_b1.xvg
+35 36   8 1 1.0 ;table_b1.xvg
+36 37   8 1 1.0 ;table_b1.xvg
+37 38   8 1 1.0 ;table_b1.xvg
+38 39   8 1 1.0 ;table_b1.xvg
+39 40   8 1 1.0 ;table_b1.xvg
+40 41   8 1 1.0 ;table_b1.xvg
+41 42   8 1 1.0 ;table_b1.xvg
+42 43   8 1 1.0 ;table_b1.xvg
+43 44   8 1 1.0 ;table_b1.xvg
+44 45   8 1 1.0 ;table_b1.xvg
+45 46   8 1 1.0 ;table_b1.xvg
+46 47   8 1 1.0 ;table_b1.xvg
+47 48   8 1 1.0 ;table_b1.xvg
+48 49   8 1 1.0 ;table_b1.xvg
+49 50   8 2 1.0 ;table_b2.xvg
+
+[ system ]
+; Name
+PE
+
+[ molecules ]
+; Compound        #mols
+PE                75

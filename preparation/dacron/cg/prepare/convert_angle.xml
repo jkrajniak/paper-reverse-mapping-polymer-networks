@@ -1,0 +1,23 @@
+<cg>
+  <bonded>
+    <name>angle</name>
+    <min>2.9</min>
+    <max>3.13</max>
+    <step>0.001</step>
+    <inverse>
+      <gromacs>
+        <table>table_a1.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+
+  <inverse>
+    <gromacs>
+      <pot_max>1e6</pot_max>
+      <table_end>3.1416</table_end>
+      <min>0.0</min>
+      <max>3.1416</max>
+      <table_bins>0.004</table_bins>
+    </gromacs>
+  </inverse>
+</cg>

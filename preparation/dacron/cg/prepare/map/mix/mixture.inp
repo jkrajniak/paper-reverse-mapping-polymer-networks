@@ -1,0 +1,20 @@
+#
+# A mixture of water and urea
+#
+
+tolerance 2.5
+filetype pdb
+output mixture.pdb
+
+
+
+structure 12Ethanediol.pdb 
+  number 1000 
+  inside box 0. 0. 0. 100. 100. 100. 
+end structure
+
+structure Terephatalic_acid.pdb 
+  number 1000 
+  inside box 0. 0. 0. 100. 100. 100. 
+end structure
+

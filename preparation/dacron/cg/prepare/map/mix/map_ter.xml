@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<cg_molecule>
+  <name>TER</name>
+  <ident>TER</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>A1</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>1:TER:O1 1:TER:C1 1:TER:O2 1:TER:H5</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B1</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>1:TER:C2 1:TER:C3 1:TER:C4 1:TER:C5 1:TER:C6 1:TER:C7 1:TER:H1 1:TER:H2 1:TER:H3 1:TER:H4</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>A2</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>1:TER:O3 1:TER:C8 1:TER:O4 1:TER:H6</beads>
+    </cg_bead>
+    </cg_beads>
+    <cg_bonded>
+        <bond>
+            <name>bond_b0</name>
+            <beads>
+                A1 B1
+                B1 A2
+            </beads>
+        </bond>
+        <angle>
+            <name>angle_a0</name>
+            <beads>
+                A1 B1 A2
+            </beads>
+        </angle>
+    </cg_bonded>
+  </topology>
+  <maps>
+    <map>
+      <name>A</name>
+      <weights>15.99 12.011 15.99 1.008</weights>
+  </map>
+  <map>
+      <name>B</name>
+      <weights>12.011 12.011 12.011 12.011 12.011 12.011 1.008 1.008 1.008 1.008</weights>
+  </map>
+  </maps>
+</cg_molecule>

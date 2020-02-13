@@ -1,0 +1,227 @@
+<cg>
+    <!-- example for a non-bonded interaction entry -->
+    <non-bonded>
+        <name>A-A</name>
+        <type1>A</type1>
+        <type2>A</type2>
+        <min>0.27</min>
+        <max>1.4</max>
+        <step>0.002</step>
+        <inverse>
+            <target>A-A.dist.tgt</target>
+            <min>0.27</min>
+            <max>1.4</max>
+            <step>0.002</step>
+            <post_add>convergence</post_add>
+            <post_add_options><convergence><norm>2</norm></convergence></post_add_options>
+            <post_update> smooth </post_update>
+            <post_update_options>
+                <scale>0.5</scale>
+                <smooth><iterations>3</iterations></smooth>
+                <pressure>
+                    <type>simple</type>
+                    <do>1</do>
+                    <simple><scale>0.001</scale></simple>
+                </pressure>
+            </post_update_options>
+            <p_target>1.0</p_target>
+            <gromacs>
+                <table>table_A_A.xvg</table>
+            </gromacs>
+            <do_potential> 1 0 0</do_potential>
+        </inverse>
+    </non-bonded>
+
+    <non-bonded>
+        <name>B-B</name>
+        <type1>B</type1>
+        <type2>B</type2>
+        <min>0.3221</min>
+        <max>1.4</max>
+        <step>0.002</step>
+        <inverse>
+            <target>B-B.dist.tgt</target>
+            <min>0.3221</min>
+            <max>1.4</max>
+            <step>0.002</step>
+            <post_add>convergence</post_add>
+            <post_add_options><convergence><norm>2</norm></convergence></post_add_options>
+            <post_update> smooth </post_update>
+            <post_update_options>
+                <scale>0.5</scale>
+                <smooth><iterations>3</iterations></smooth>
+                <pressure>
+                    <type>simple</type>
+                    <do>1</do>
+                    <simple><scale>0.001</scale></simple>
+                </pressure>
+            </post_update_options>
+            <p_target>1.0</p_target>
+            <gromacs>
+                <table>table_B_B.xvg</table>
+            </gromacs>
+            <do_potential> 1 0 0</do_potential>
+
+        </inverse>
+    </non-bonded>
+
+    <non-bonded>
+        <name>A-B</name>
+        <type1>A</type1>
+        <type2>B</type2>
+        <min>0.3</min>
+        <max>1.4</max>
+        <step>0.002</step>
+        <inverse>
+            <target>A-B.dist.tgt</target>
+            <min>0.3</min>
+            <max>1.4</max>
+            <step>0.002</step>
+            <target>A-B.dist.tgt</target>
+            <post_add>convergence</post_add>
+            <post_add_options><convergence><norm>2</norm></convergence></post_add_options>
+            <post_update> smooth </post_update>
+            <post_update_options>
+                <scale>0.5</scale>
+                <smooth><iterations>3</iterations></smooth>
+                <pressure>
+                    <type>simple</type>
+                    <do>1</do>
+                    <simple><scale>0.001</scale></simple>
+                </pressure>
+            </post_update_options>
+            <p_target>1.0</p_target>
+            <gromacs>
+                <table>table_A_B.xvg</table>
+            </gromacs>
+            <do_potential> 0 1 0</do_potential>
+        </inverse>
+    </non-bonded>
+    <non-bonded>
+        <name>D-D</name>
+        <type1>D</type1>
+        <type2>D</type2>
+        <min>0.34</min>
+        <max>1.3</max>
+        <step>0.002</step>
+        <inverse>
+            <target>D-D.dist.tgt</target>
+            <target>D-D.dist.tgt</target>
+            <min>0.35</min>
+            <max>1.3</max>
+            <step>0.002</step>
+            <post_add>convergence</post_add>
+            <post_add_options><convergence><norm>2</norm></convergence></post_add_options>
+            <post_update> smooth </post_update>
+            <post_update_options>
+                <scale>0.5</scale>
+                <smooth><iterations>3</iterations></smooth>
+                <pressure>
+                    <type>simple</type>
+                    <do>1</do>
+                    <simple><scale>0.001</scale></simple>
+                </pressure>
+            </post_update_options>
+            <p_target>1.0</p_target>
+            <gromacs>
+                <table>table_D_D.xvg</table>
+            </gromacs>
+            <do_potential> 1 0 0</do_potential>
+        </inverse>
+    </non-bonded>
+    <non-bonded>
+        <name>A-D</name>
+        <type1>A</type1>
+        <type2>D</type2>
+        <min>0.34</min>
+        <max>1.2</max>
+        <step>0.002</step>
+        <inverse>
+            <target>A-D.dist.tgt</target>
+            <target>A-D.dist.tgt</target>
+            <min>0.34</min>
+            <max>1.2</max>
+            <step>0.002</step>
+            <post_add>convergence</post_add>
+            <post_add_options><convergence><norm>2</norm></convergence></post_add_options>
+            <post_update> smooth </post_update>
+            <post_update_options>
+                <scale>0.5</scale>
+                <smooth><iterations>3</iterations></smooth>
+                <pressure>
+                    <type>simple</type>
+                    <do>1</do>
+                    <simple><scale>0.001</scale></simple>
+                </pressure>
+            </post_update_options>
+            <p_target>1.0</p_target>
+            <gromacs>
+                <table>table_A_D.xvg</table>
+            </gromacs>
+            <do_potential> 0 0 1</do_potential>
+        </inverse>
+    </non-bonded>
+    <non-bonded>
+        <name>B-D</name>
+        <type1>B</type1>
+        <type2>D</type2>
+        <min>0.34</min>
+        <max>1.2</max>
+        <step>0.01</step>
+        <inverse>
+            <target>B-D.dist.tgt</target>
+            <target>B-D.dist.tgt</target>
+            <min>0.35</min>
+            <max>1.2</max>
+            <step>0.002</step>
+            <post_add>convergence</post_add>
+            <post_add_options><convergence><norm>2</norm></convergence></post_add_options>
+            <post_update> smooth </post_update>
+            <post_update_options>
+                <scale>0.5</scale>
+                <smooth><iterations>3</iterations></smooth>
+                <pressure>
+                    <type>simple</type>
+                    <do>1</do>
+                    <simple><scale>0.001</scale></simple>
+                </pressure>
+            </post_update_options>
+            <p_target>1.0</p_target>
+            <gromacs>
+                <table>table_B_D.xvg</table>
+            </gromacs>
+            <do_potential> 0 0 1</do_potential>
+        </inverse>
+    </non-bonded>
+
+    <inverse>
+        <!-- 298.0 * 0.00831451 -->
+        <kBT>4.43163383</kBT>
+        <program>gromacs</program>
+        <gromacs>
+            <grompp>
+                <bin>gmx_mpi grompp</bin>
+            </grompp>
+            <g_energy><bin>gmx_mpi energy</bin></g_energy>
+            <mdrun><command>mpiexec -n 20 gmx_mpi mdrun</command></mdrun>
+            <table_bins>0.002</table_bins>
+            <pot_max>1e8</pot_max>
+            <!--<equi_time>2500</equi_time>-->
+            <table_end>2.0</table_end>
+            <traj>traj.xtc</traj>
+        </gromacs>
+        <!-- <initial_configuration>laststep</initial_configuration> -->
+        <filelist>
+            index.ndx grompp.mdp topol.top table.xvg table_a1.xvg diol_cg.itp ter_cg.itp
+        </filelist>
+        <!-- do so many iterations -->
+        <iterations_max>450</iterations_max>
+        <!-- ibi: inverse biltzmann imc: inverse monte carlo -->
+        <method>ibi</method>
+        <convergence_check>
+            <type>default</type>
+            <limit>0.001</limit>
+        </convergence_check>
+        <cleanlist>traj.xtc traj.trr table_a1.xvg topol.tpr</cleanlist>
+    </inverse>
+</cg>
