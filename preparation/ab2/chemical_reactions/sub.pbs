@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#PBS -A lp_sim_interpoco
+#PBS -l nodes=1:ppn=20
+#PBS -l walltime=24:00:00
+#PBS -N final_3 
+
+source switch_to_2015a
+
+module purge
+module load 2015a/espressopp/chem
+module load chemlab/1.0
+
+cd $PBS_O_WORKDIR
+
+for m in 10 50 100; do
+    mpirun -np 18 start_simulation.py @params --output_prefix cgff/sn_${m} --maximum_conversion=RA:${m}:1000 >> log_$m
+done

@@ -1,0 +1,380 @@
+<settings>
+    <cg_molecule equilibrate_charges="1">
+        <name>N1T</name>
+        <ident>N1T</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>N1L1</name>
+        <ident>N1L1</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>N1L2</name>
+        <ident>N1L2</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>N1D</name>
+        <ident>N1D</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>N2T</name>
+        <ident>N2T</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>N2L1</name>
+        <ident>N2L1</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>N2L2</name>
+        <ident>N2L2</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>N2D</name>
+        <ident>N2D</ident>
+        <source_coordinate><file molecule_degree="*">monomer_center.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>A0</name>
+            <beads degree="1">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:H5 1:MOL:O1 1:MOL:O2
+            </beads>
+            <beads degree="2" active_site="MOL:O2:2">
+                1:MOL:C6 1:MOL:C7 1:MOL:H3 1:MOL:H4 1:MOL:O1 1:MOL:O2
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>LI</name>
+            <beads>
+                1:MOL:C1 1:MOL:C3 1:MOL:C2 1:MOL:H1 1:MOL:H2 1:MOL:H6 1:MOL:H7 1:MOL:H8
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B1</name>
+            <beads degree="1">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16 1:MOL:H18 1:MOL:O4
+            </beads>
+            <beads degree="2" active_site="MOL:C17:4">
+                1:MOL:C5 1:MOL:C13 1:MOL:C14 1:MOL:C15 1:MOL:C16 1:MOL:C17 1:MOL:H13
+                1:MOL:H14 1:MOL:H15 1:MOL:H16
+            </beads>
+        </cg_bead>
+        <cg_bead>
+            <name>B2</name>
+            <beads degree="1">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9 1:MOL:H17 1:MOL:O3
+            </beads>
+            <beads degree="2" active_site="MOL:C12:4">
+                1:MOL:C4 1:MOL:C8 1:MOL:C10 1:MOL:C12 1:MOL:C9 1:MOL:C11 1:MOL:H11
+                1:MOL:H12 1:MOL:H10 1:MOL:H9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_configuration>
+        <coordinate>cg_conf.gro</coordinate>
+        <topology>cg_topol.top</topology>
+    </cg_configuration>
+
+    <hybrid_configuration>
+        <file>hyb_conf.gro</file>
+    </hybrid_configuration>
+
+    <hybrid_topology>
+        <file>hyb_topol.top</file>
+        <bonds params=" ; AT cross bonds">
+            O2 C17
+            O2 C12
+        </bonds>
+
+        <angles params=" ; AT cross angles">
+
+        </angles>
+        <dihedrals params="; AT dihedrals">
+
+        </dihedrals>
+
+        <molecule_type>
+            <name>HYB</name>
+            <exclusion>3</exclusion>
+        </molecule_type>
+        <include>
+            "/apps/leuven/thinking/2014a/software/GROMACS/5.0.4-intel-2014a-hybrid/share/gromacs/top/oplsaa.ff/forcefield.itp"
+            ;"/usr/share/gromacs/top/oplsaa.ff/forcefield.itp"
+        </include>
+        <system>HYB</system>
+    </hybrid_topology>
+</settings>

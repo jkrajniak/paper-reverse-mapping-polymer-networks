@@ -1,0 +1,159 @@
+<settings>
+    <cg_molecule equilibrate_charges="1">
+        <name>FOU</name>
+        <ident>FOU</ident>
+        <source_coordinate><file molecule_degree="*">monomer.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>FOU</name>
+            <beads degree="3" active_site="LIG:C2:3 LIG:C5:3"><!--C2:B1,C5:B2-->
+                1:LIG:C0 1:LIG:C1 1:LIG:C2 1:LIG:C3 1:LIG:S1 1:LIG:C4 1:LIG:S2 1:LIG:C5 1:LIG:C6 1:LIG:C7 1:LIG:C8 1:LIG:C9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>BRA</name>
+        <ident>BRA</ident>
+        <source_coordinate><file molecule_degree="*">monomer.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>BRA</name>
+            <beads degree="3" active_site="LIG:C3:3 LIG:C2:3 LIG:C5:3"><!--C3:A,C2:B1,C5:B2-->
+                1:LIG:C0 1:LIG:C1 1:LIG:C2 1:LIG:C3 1:LIG:S1 1:LIG:C4 1:LIG:S2 1:LIG:C5 1:LIG:C6 1:LIG:C7 1:LIG:C8 1:LIG:C9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>LIN</name>
+        <ident>LIN</ident>
+        <source_coordinate><file molecule_degree="*">monomer.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>LIX</name>
+            <beads degree="2" active_site="LIG:C3:3 LIG:C2:3"><!--C3:A,C2:B1-->
+                1:LIG:C0 1:LIG:C1 1:LIG:C2 1:LIG:C3 1:LIG:S1 1:LIG:C4 1:LIG:S2 1:LIG:C5 1:LIG:C6 1:LIG:C7 1:LIG:C8 1:LIG:C9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>LIN</name>
+        <ident>LIN</ident>
+        <source_coordinate><file molecule_degree="*">monomer.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>LIY</name>
+            <beads degree="2" active_site="LIG:C3:3 LIG:C5:3"><!--C3:A,C5:B2-->
+                1:LIG:C0 1:LIG:C1 1:LIG:C2 1:LIG:C3 1:LIG:S1 1:LIG:C4 1:LIG:S2 1:LIG:C5 1:LIG:C6 1:LIG:C7 1:LIG:C8 1:LIG:C9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+    <cg_molecule equilibrate_charges="1">
+        <name>TER</name>
+        <ident>TER</ident>
+        <source_coordinate><file molecule_degree="*">monomer.gro</file></source_coordinate>
+        <source_topology><file molecule_degree="*">monomer.top</file></source_topology>
+        <cg_bead>
+            <name>TER</name>
+            <beads degree="1" active_site="LIG:C3:3"><!--C3:A-->
+                1:LIG:C0 1:LIG:C1 1:LIG:C2 1:LIG:C3 1:LIG:S1 1:LIG:C4 1:LIG:S2 1:LIG:C5 1:LIG:C6 1:LIG:C7 1:LIG:C8 1:LIG:C9
+            </beads>
+        </cg_bead>
+    </cg_molecule>
+
+    <cg_configuration>
+        <coordinate>cg_conf.gro</coordinate>
+        <topology>cg_topol.top</topology>
+    </cg_configuration>
+
+    <hybrid_configuration>
+        <file>hyb_conf.gro</file>
+    </hybrid_configuration>
+
+    <hybrid_topology>
+        <file>hyb_topol.top</file>
+        <bonds params="1  0.1428  284662.624; AT cross bonds" typeid="6">
+            C2 C3
+            C3 C5
+        </bonds>
+        <angles params="1  114.19  588.672; AT cross angles" typeid="12">
+            C2 C2 C1
+            C2 C3 C0
+            C2 C5 C7
+            C3 C2 C1
+            C3 C3 C0
+            C3 C5 C7
+            C5 C2 C1
+            C5 C3 C0
+            C5 C5 C7
+        </angles>
+        <angles params="1  120.21  534.523; AT cross angles" typeid="13">
+            C2 C2 S1
+            C2 C3 S1
+            C2 C5 S2
+            C3 C2 S1
+            C3 C3 S1
+            C3 C5 S2
+            C5 C2 S1
+            C5 C3 S1
+            C5 C5 S2
+        </angles>
+        <dihedrals params="1      0.0  16.736  2; AT dihedrals" typeid="10">
+            C0 C3 C2 C1
+            C0 C3 C3 C0
+            C0 C3 C5 C7
+            C1 C2 C2 C1
+            C1 C2 C5 C7
+            C2 C2 C1 C0
+            C2 C2 C1 C4
+            C2 C3 C0 C1
+            C2 C5 C7 C6
+            C2 C5 C7 C9
+            C0 C3 C2 S1
+            C0 C3 C3 S1
+            C0 C3 C5 S2
+            C1 C2 C2 S1
+            C1 C2 C3 S1
+            C1 C2 C5 S2
+            C5 C5 C7 C6
+            C5 C5 C7 C9
+            S1 C2 C2 S1
+            C3 C2 C1 C0
+            S2 C5 C5 C7
+            S1 C2 C5 C7
+            S2 C5 C3 S1
+            S1 C3 C3 S1
+            C5 C2 C1 C0
+            S1 C2 C3 S1
+            C5 C3 C0 C1
+            C3 C5 C7 C6
+            C5 C2 C1 C4
+            S2 C5 C2 S1
+            C3 C5 C7 C9
+            C3 C2 C1 C4
+            S2 C5 C5 S2
+            C7 C5 C5 C7
+            S1 C3 C5 C7
+            C3 C3 C0 C1           
+        </dihedrals>
+        <dihedrals params="1      0.0   4.602  2; AT dihedrals" typeid="11">
+            C2 C2 S1 C3
+            C2 C3 S1 C2
+            C2 C5 S2 C4
+            C3 C3 S1 C2
+            C5 C5 S2 C4
+            C5 C2 S1 C3
+            C3 C5 S2 C4
+            C3 C2 S1 C3
+            C5 C3 S1 C2
+        </dihedrals>
+        <molecule_type>
+            <name>HYB</name>
+            <exclusion>3</exclusion>
+        </molecule_type>
+        <include>
+            "ffnb_at.itp"
+	    "ffnb_cg.itp"
+        </include>
+        <system>HYB</system>
+    </hybrid_topology>
+</settings>

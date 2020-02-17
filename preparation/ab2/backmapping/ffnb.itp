@@ -1,0 +1,47 @@
+[ defaults ]
+1 1
+
+[ atomtypes ]
+;name  at.num   mass      charge  ptype      c6           c12
+  MA     59.044800     0.000     V        0            0
+  ML     41.0721000    0.000     V        0            0
+  MB     93.105398     0.000     V        0            0
+  PA     59.044800     0.000     V        0            0
+  PL     41.0721000    0.000     V        0            0
+  PB     93.105398     0.000     V        0            0
+  RA     42.037400     0.000     V        0            0
+  RB     92.097398     0.000     V        0            0
+
+
+[ bondtypes ]
+; i j func
+MA ML 8 0 1.0 ;b0
+ML MB 8 1 1.0 ;b1
+RA PL 8 2 1.0 ;b2
+PA PL 8 3 1.0 ;b3
+PL PB 8 4 1.0 ;b4
+PL RB 8 5 1.0 ;b5
+RA RB 8 6 1.0 ;b6
+
+[ angletypes ]
+; i j k func
+ MA ML MB 8 0 1.0 ;a0
+ MB ML MB 8 1 1.0 ;a1
+ RA PL PB 8 2 1.0 ;a2
+ RA PL RB 8 3 1.0 ;a3
+ PA PL RB 8 4 1.0 ;a4
+ PA PL PB 8 5 1.0 ;a5 equal to PA-PL-RB
+ PB PL RB 8 6 1.0 ;a6
+ RB PL RB 8 7 1.0 ;a7
+ PB PL PB 8 8 1.0 ;a8
+ PL RA RB 8 9 1.0 ;a9
+ PL RB RA 8 10 1.0 ;a10
+
+[ dihedraltypes ]
+ML MA MB MB 8 0 1.0 ;d0
+PL RA PB RB 8 1 1.0 ;d1
+PL PA RB RB 8 2 1.0 ;d2
+PL PA PB RB 8 3 1.0 ;d3 equal to PL-PA-RB-RB
+PL RA RB RB 8 4 1.0 ;d4
+PL RA PB PB 8 5 1.0 ;d5
+
